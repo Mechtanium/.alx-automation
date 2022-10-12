@@ -27,7 +27,10 @@ u	Update the script to the newest version.
 
 ### Warning
 
-Edit:	By default the script will add new files to the 
+Edit:	
+
+
+By default the script will add new files to the 
 	./alx-automation directory. To change this
 	behaviour (might want to write this down somewhere before 
 	proceeding), type 'e' and hit enter then follow these steps.
