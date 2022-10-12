@@ -27,10 +27,10 @@ u	Update the script to the newest version.
 
 **Warning
 
-Edit: 	\tBy default the script will add new files to the 
-	\t./alx-automation directory. To change this
-	\tbehaviour (might want to write this down somewhere before 
-	\tproceeding), type 'e' and hit enter then follow these steps.
+Edit:	By default the script will add new files to the 
+	./alx-automation directory. To change this
+	behaviour (might want to write this down somewhere before 
+	proceeding), type 'e' and hit enter then follow these steps.
 
 STEP 1:	\ttype 'i' to edit the file
 STEP 2:	\tchange the DIR_PATH=./0x03-shell_variables_expansions
