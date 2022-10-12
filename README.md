@@ -38,3 +38,13 @@ Change the DIR_PATH=./`previous_directory` variable on the first line to DIR_PAT
 Hit the 'esp' key to leave edit mode
 #### STEP 4:
 Type ':wq' to write changes and close the file
+
+
+# Version and feature update information
+We try to have weekly updates tothis project. You can use "u" alias to update easily from your terminal.
+
+## v3.0.1
+Updates to C template.
+
+## v3.0.0
+Architecture redesign
