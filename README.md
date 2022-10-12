@@ -3,14 +3,14 @@ ALX Lazp People Foundation - Computing removes repitition and speeds innovation.
 
 
 
-## Installation
+# Installation
 
 Run the following command to setup in your git repository root folder.
 
 wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh
 
 
-## Usage
+# Usage
 
 Use the following commands with the following effect
 
@@ -25,16 +25,16 @@ d       Unistall the automation tool.
 u	Update the script to the newest version.
 
 
-### Warning
+## Warning
 
-#### Edit before use:	
-By default the script will add new files to the "./alx-automation" directory. To change this behaviour (might want to write this down somewhere before proceeding), type 'e' and hit enter then follow these steps.
+### Edit before use:	
+By default the script will add new files to the ./`default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type 'e' and hit enter then follow these steps.
 
-##### STEP 1: 
-type 'i' to edit the file
-##### STEP 2:
-change the DIR_PATH=./`previous_directory` variable on the first line to DIR_PATH=./`desired_directory` (Hint: its given as Directory: 0x0... in the question)
-##### STEP 3:
-hit the 'esp' key to leave edit mode
-##### STEP 4:
-type ':wq' to write changes and close the file
+#### STEP 1: 
+Type 'i' to edit the file
+#### STEP 2:
+Change the DIR_PATH=./`previous_directory` variable on the first line to DIR_PATH=./`desired_directory` (Hint: its given as Directory: 0x0... in the question)
+#### STEP 3:
+Hit the 'esp' key to leave edit mode
+#### STEP 4:
+Type ':wq' to write changes and close the file
