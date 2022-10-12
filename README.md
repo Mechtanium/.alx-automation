@@ -3,14 +3,14 @@ ALX Lazp People Foundation - Computing removes repitition and speeds innovation.
 
 
 
-**Installation
+## Installation
 
 Run the following command to setup in your git repository root folder.
 
 wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh
 
 
-**Usage
+## Usage
 
 Use the following commands with the following effect
 
@@ -25,7 +25,7 @@ d       Unistall the automation tool.
 u	Update the script to the newest version.
 
 
-**Warning
+### Warning
 
 Edit:	By default the script will add new files to the 
 	./alx-automation directory. To change this
