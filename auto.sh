@@ -1,6 +1,6 @@
 #!/bin/bash
 #Create project file
-DIR_PATH=./0x0D-preprocessor
+DIR_PATH=./0x10-variadic_functions
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
@@ -23,13 +23,13 @@ if ! [ -f "$FILE_PATH" ]
 then
     if [ $1 == bash ] || [ $1 == Bash ] || [ $1 == BASH ]
     then
-            create_new "$FILE_PATH" ./alx-automation/temp.bash
+            create_new "$FILE_PATH" ./.alx-automation/temp.bash
     elif [ $1 == c ] || [ $1 == C ]
     then
-            create_new "$FILE_PATH" ./alx-automation/temp.c
+            create_new "$FILE_PATH" ./.alx-automation/temp.c
     elif [ $1 == h ] || [ $1 == H ]
     then
-            create_new "$FILE_PATH" ./alx-automation/temp.h
+            create_new "$FILE_PATH" ./.alx-automation/temp.h
     fi
 fi
 
