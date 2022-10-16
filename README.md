@@ -1,5 +1,7 @@
 # alx-automation
-ALX Lazy People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
+This automation tool will help you quickly get through all the ALX assignments. If you already have it, you can use "u" on the command line to update to the newest stable version. The stable channel is updated weekly.<br /><br />
+
+**_Proudly sponsored by:_** ALX Lazy People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
 _*Always remember to change your the default directory to your preferred directory after every **install**, **reinstall** or **update**._<br /><br />
 
 # Installation
