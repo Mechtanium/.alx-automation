@@ -71,3 +71,7 @@ We try to have weekly updates to this project. You can use "u" alias to update e
 
 ## v3.0.0
 - Architecture redesign
+
+# FAQ
+- How to copy and paste on Ubunto 20.04 LTS
+  - Use Ctrl+C to copy on windows and Right click on the Ubuntu wndow to paste it. (For debian linux _(e.g. raspberry OS)_ highlght test and use center/wheel click to paste).
