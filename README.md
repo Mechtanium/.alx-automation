@@ -1,6 +1,6 @@
 # alx-automation
-ALX Lazp People Foundation - Computing removes repitition and speeds innovation.
-Always remember to change your the default directory toyour preferred directory every **install**, **reinstall** or **update**<br /><br />
+ALX Lazp People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
+_*Always remember to change your the default directory to your preferred directory after every **install**, **reinstall** or **update**._<br /><br />
 
 # Installation
 
