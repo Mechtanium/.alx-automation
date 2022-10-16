@@ -46,15 +46,26 @@ Type ':wq' to write changes and close the file
 # Version and feature update information
 We try to have weekly updates tothis project. You can use "u" alias to update easily from your terminal.
 
+## Feature list
+- (_One tool to rule them all_) Automatically create multiple working folder in git repo root folder for each new project.
+- Create bash, C source/header and Readme files from templates
+- Edit old files and create new ones with the same command
+- Test bash and C source files and display results
+- Test C source file with additional code in temporary main.c file and display result
+- Commits files to repo automatically
+- Retrieve commit messages from README file automatically 
+- Checks for betty style and documentation compliance in all created or modified file before testing
+- (Coming soon) Adding testing parameters for bash and C source files from the command line
+
 ## v3.1.0
-Update to uninstall and update scripts <br />
-New feature to optonally commit header files immediately <br />
-New display format for c source results <br />
-Update to C source and header templates <br />
+- Update to uninstall and update scripts
+- New feature to optonally commit header files immediately
+- New display format for c source results
+- Update to C source and header templates
 
 
 ## v3.0.1
-Updates to C template.
+- Updates to C template.
 
 ## v3.0.0
-Architecture redesign
+- Architecture redesign
