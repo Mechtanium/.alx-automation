@@ -4,8 +4,8 @@ Always remember to change your the default directory toyour preferred directory 
 
 # Installation
 
-Run the following command to setup in your **git repository root folder**.<br />
-wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh<br /><br />
+Run _(copy, paste and hit enter)_ the following command to setup in your **git repository root folder _(e.g ~/alx-low_level_programming)_**.<br /><br />
+**wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh**<br /><br />
 [Intro and setup video](https://alx-students.slack.com/files/U03TL91991Q/F045F0A29NG/alx_lazy_people_foundation_-_alpf_________.mp4)
 
 # Usage
