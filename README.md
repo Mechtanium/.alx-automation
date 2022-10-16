@@ -1,14 +1,12 @@
 # alx-automation
 ALX Lazp People Foundation - Computing removes repitition and speeds innovation.
-Always remember to change your the default directory toyour preferred directory every **install**, **reinstall** or **update**
-
+Always remember to change your the default directory toyour preferred directory every **install**, **reinstall** or **update**<br /><br />
 
 # Installation
 
-Run the following command to setup in your **git repository root folder**.
-
-wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh
-
+Run the following command to setup in your **git repository root folder**.<br />
+wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh<br /><br />
+[Intro and setup video](https://alx-students.slack.com/files/U03TL91991Q/F045F0A29NG/alx_lazy_people_foundation_-_alpf_________.mp4)
 
 # Usage
 The following command line aliases have the following effects within your **repo root folder**:
@@ -23,7 +21,8 @@ Generate or modify a c header file.<br /><br />
 Generate or modify a bash script file.<br /><br />
 **e**<br />
 Edit the script for the automation tool.
-- To change referenced working directory, change $DIR_PATH.<br /><br />
+- To change referenced working directory, change the $DIR_PATH variable on line #3. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
+
 **d**<br />
 Unistall the automation tool.<br /><br />
 **u**<br />
