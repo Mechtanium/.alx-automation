@@ -1,6 +1,6 @@
 # alx-automation
 ALX Lazp People Foundation - Computing removes repitition and speeds innovation.
-
+Always remember to change your the default directory toyour preferred directory every install, reinstall or **update**
 
 
 # Installation
@@ -42,6 +42,12 @@ Type ':wq' to write changes and close the file
 
 # Version and feature update information
 We try to have weekly updates tothis project. You can use "u" alias to update easily from your terminal.
+
+## v3.1.0
+Update to unistall and update scripts
+New feature to optonally commit header files immediately
+New deplay format for results
+
 
 ## v3.0.1
 Updates to C template.
