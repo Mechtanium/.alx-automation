@@ -44,7 +44,7 @@ Type ':wq' to write changes and close the file
 
 
 # Version and feature update information
-We try to have weekly updates tothis project. You can use "u" alias to update easily from your terminal.
+We try to have weekly updates to this project. You can use "u" alias to update easily from your terminal.
 
 ## Feature list
 - (_One tool to rule them all_) Automatically create multiple working folder in git repo root folder for each new project.
