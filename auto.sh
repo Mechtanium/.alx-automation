@@ -59,18 +59,22 @@ then
                 betty-style $DIR_PATH/main.c $FILE_PATH
                 betty-doc $DIR_PATH/main.c $FILE_PATH
                 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 \
-                        ./alx-automation/putchar.c $DIR_PATH/main.c \
-                        $FILE_PATH -o $DIR_PATH/main
+                        ./.alx-automation/putchar.c $DIR_PATH/*.c \
+                        -o $DIR_PATH/main
                 chmod u+x $DIR_PATH/main
+		echo -e "\nResults...\n"
                 $DIR_PATH/main 2 -3
+		echo -e "\n"
                 rm $DIR_PATH/main.c $DIR_PATH/main
         else
                 betty-style $FILE_PATH
                 betty-doc $FILE_PATH
                 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 \
-                        ./alx-automation/putchar.c $FILE_PATH -o $DIR_PATH/main
+                        ./.alx-automation/putchar.c $FILE_PATH -o $DIR_PATH/main
                 chmod u+x $DIR_PATH/main
+		echo -e "\nResults...\n"
                 $DIR_PATH/main 2 -3
+		echo -e "\n"
 		rm $DIR_PATH/main
         fi
 elif [[ $1 == h ]] || [[ $1 == H ]]
