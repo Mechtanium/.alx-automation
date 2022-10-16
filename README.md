@@ -47,9 +47,10 @@ Type ':wq' to write changes and close the file
 We try to have weekly updates tothis project. You can use "u" alias to update easily from your terminal.
 
 ## v3.1.0
-Update to unistall and update scripts <br />
+Update to uninstall and update scripts <br />
 New feature to optonally commit header files immediately <br />
-New deplay format for results <br />
+New display format for c source results <br />
+Update to C source and header templates <br />
 
 
 ## v3.0.1
