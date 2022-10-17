@@ -38,7 +38,7 @@ By default the script will add new files to the `./default_directory`. To change
 #### STEP 1: 
 Type 'i' to edit the file
 #### STEP 2:
-Change the `DIR_PATH=./previous_directory` variable on the first line to `DIR_PATH=./desired_directory` (Hint: its given as Directory: 0x0... in the question)
+Change the `DIR_PATH=./default_directory` variable on line #3 to `DIR_PATH=./desired_directory` (Hint: its given as Directory: 0x0... in the question)
 #### STEP 3:
 Hit the 'esp' key to leave edit mode
 #### STEP 4:
