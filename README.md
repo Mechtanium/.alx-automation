@@ -26,7 +26,7 @@ Edit the script for the automation tool.
 - To change referenced working directory, change the `$DIR_PATH` variable on line #3. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
 
 **d**<br />
-Unistall the automation tool.<br /><br />
+Uninstall the automation tool.<br /><br />
 **u**<br />
 Update the script to the newest version.<br /><br />
 
