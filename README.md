@@ -33,12 +33,12 @@ Update the script to the newest version.<br /><br />
 ## Warning
 
 ### Edit before use:
-By default the script will add new files to the ./`default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type 'e' and hit enter then follow these steps.
+By default the script will add new files to the `./default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type 'e' and hit enter then follow these steps.
 
 #### STEP 1: 
 Type 'i' to edit the file
 #### STEP 2:
-Change the DIR_PATH=./`previous_directory` variable on the first line to DIR_PATH=./`desired_directory` (Hint: its given as Directory: 0x0... in the question)
+Change the `DIR_PATH=./previous_directory` variable on the first line to `DIR_PATH=./desired_directory` (Hint: its given as Directory: 0x0... in the question)
 #### STEP 3:
 Hit the 'esp' key to leave edit mode
 #### STEP 4:
