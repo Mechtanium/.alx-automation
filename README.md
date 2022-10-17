@@ -23,7 +23,7 @@ Generate or modify a c header file.<br /><br />
 Generate or modify a bash script file.<br /><br />
 **e**<br />
 Edit the script for the automation tool.
-- To change referenced working directory, change the $DIR_PATH variable on line #3. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
+- To change referenced working directory, change the `$DIR_PATH` variable on line #3. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
 
 **d**<br />
 Unistall the automation tool.<br /><br />
