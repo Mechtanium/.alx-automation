@@ -1,6 +1,6 @@
 #!/bin/bash
 #Create project file
-DIR_PATH=./0x12-singly_linked_lists
+DIR_PATH=.
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
@@ -55,12 +55,12 @@ then
         read ans
         if [[ $ans == y ]] || [[ $ans == Y ]]
         then
-                vi $DIR_PATH/main.c
-                betty-style $DIR_PATH/main.c $FILE_PATH
-                betty-doc $DIR_PATH/main.c $FILE_PATH
+                vi ./.alx-automation/main.c
+                betty-style ./.alx-automation/main.c $FILE_PATH
+                betty-doc ./.alx-automation/main.c $FILE_PATH
                 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 \
-                        ./.alx-automation/putchar.c $DIR_PATH/*.c \
-                        -o $DIR_PATH/main
+                        ./.alx-automation/putchar.c $DIR_PATH/*.c ./.alx-automation/main.c \
+                        -I $DIR_PATH -o $DIR_PATH/main
                 chmod u+x $DIR_PATH/main
 		echo -e "\033[0;35m\nResults...\n\033[0m"
                 $DIR_PATH/main 2 -3
@@ -81,14 +81,14 @@ then
 	read ans
 	if [[ $ans == y ]] || [[ $ans == Y ]]
 	then
-		vi $DIR_PATH/main.c
-		betty-style $DIR_PATH/main.c $FILE_PATH
-		betty-doc $DIR_PATH/main.c $FILE_PATH
-		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $DIR_PATH/main.c \
-			-o $DIR_PATH/main
+		vi ./.alx-automation/main.c
+		betty-style ./.alx-automation/main.c $FILE_PATH
+		betty-doc ./.alx-automation/main.c $FILE_PATH
+		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 ./.alx-automation/main.c \
+			-I $DIR_PATH -o $DIR_PATH/main
 		chmod u+x $DIR_PATH/main
 		$DIR_PATH/main
-		rm -f $DIR_PATH/main.c $DIR_PATH/main
+		rm -f ./.alx-automation/main.c $DIR_PATH/main
 	fi
 fi
 
@@ -113,7 +113,7 @@ then
         echo -e "\033[0;35mVerify result and hit enter key to continue or ctrl+C to terminate: \033[0m"
         read
 	rm -f $DIR_PATH/main
-	rm -fi $DIR_PATH/main.c
+	rm -fi ./.alx-automation/main.c
 
 	version
 else
