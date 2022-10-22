@@ -5,5 +5,6 @@ then
 else
 	echo -e "Updating...\n"
 	git pull -q
+	./alias.sh
 	echo -e "All done\n"
 fi
