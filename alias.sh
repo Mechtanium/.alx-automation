@@ -1,4 +1,4 @@
-alias r="./.alx-automation/auto.sh"
+alias r="./.alx-automation/run.sh"
 alias e="source ./.alx-automation/engagement.sh"
 alias d="source ./.alx-automation/uninstall.sh"
 alias u="./.alx-automation/update.sh"

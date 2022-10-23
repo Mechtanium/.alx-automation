@@ -1,6 +1,6 @@
 #!/bin/bash
 #Create project file
-! [[ -d "$DIR_PATH" ]] && mkdir DIR_PATH
+! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
 ./.alx-automation/readme.sh
@@ -12,7 +12,7 @@ create_new () {
 
 echo -ne "\033[0;35mWhat is filename: \033[0m"
 read filename
-FILE_PATH=DIR_PATH/$filename
+FILE_PATH=$DIR_PATH/$filename
 if ! [ -f "$FILE_PATH" ]
 then
     if [ $1 == bash ] || [ $1 == Bash ] || [ $1 == BASH ]
@@ -30,13 +30,14 @@ fi
 vi $FILE_PATH
 
 echo -e "\n"
-ls -l DIR_PATH
-echo -e "    /\\    "
-echo -e "   /  \\   "
-echo -e "  /_  _\\  "
-echo -e "    ||     "
-echo -e "    --     "
-echo -e "Current folder $DIR_PATH content\n\033[0;35mEnsure your file is listed\n\033[0m"
+ls -l $DIR_PATH
+echo -e "
+    /\\    
+   /  \\   
+  /_  _\\  
+    ||     
+    --     
+Current folder $DIR_PATH content\n\033[0;35mEnsure your file is listed\n\033[0m"
 
 #Testing
 t $1 $filename
@@ -45,7 +46,7 @@ version () {
 	#Versioning and submission
 	git add .
 	git status
-	git commit -m "$(grep -A1 -P $filename $README_PATH | tail -n 1)"
+	git commit -m "$(grep -A1 -P $filename $DIR_PATH/Readme.md | tail -n 1)"
 	git push
 	echo -e "\033[0;35m
 
@@ -61,7 +62,7 @@ if ! [ $1 == h ] && ! [ $1 == H ]
 then
         echo -e "\033[0;35mVerify result and hit enter key to continue or ctrl+C to terminate: \033[0m"
         read
-	rm -f DIR_PATH/main
+	rm -f $DIR_PATH/main
 	rm -fi ./.alx-automation/main.c
 
 	version
