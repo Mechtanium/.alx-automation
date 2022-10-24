@@ -10,27 +10,26 @@ create_new () {
         cat $2 > $1
 }
 
-if [ -z $2 ]
-then
-	FILE_PATH=$2
-else
-	echo -ne "\033[0;35mWhat is filename: \033[0m"
-	read filename
-	FILE_PATH=$DIR_PATH/$filename
-fi
+case $2 in
+	"")
+		echo -ne "\033[0;35mWhat is filename: \033[0m"
+		read filename
+		FILE_PATH=$DIR_PATH/$filename;;
+	*)
+		filename=$2
+		FILE_PATH=$DIR_PATH/$2;;
+esac
 
 if ! [ -f "$FILE_PATH" ]
 then
-    if [ $1 == bash ] || [ $1 == Bash ] || [ $1 == BASH ]
-    then
-            create_new "$FILE_PATH" ./.alx-automation/temp.bash
-    elif [ $1 == c ] || [ $1 == C ]
-    then
-            create_new "$FILE_PATH" ./.alx-automation/temp.c
-    elif [ $1 == h ] || [ $1 == H ]
-    then
-            create_new "$FILE_PATH" ./.alx-automation/temp.h
-    fi
+	case $1 in
+		bash | Bash | BASH)
+			create_new "$FILE_PATH" ./.alx-automation/temp.bash;;
+		c | C)
+			create_new "$FILE_PATH" ./.alx-automation/temp.c;;
+		h | H)
+			create_new "$FILE_PATH" ./.alx-automation/temp.h;;
+	esac
 fi
 
 vi $FILE_PATH
@@ -52,7 +51,7 @@ version () {
 	#Versioning and submission
 	git add .
 	git status
-	git commit -m "$(grep -A1 -P $filename $DIR_PATH/Readme.md | tail -n 1)"
+	git commit -m "$(grep -A1 -P $filename $DIR_PATH/README.md | tail -n 1)"
 	git push
 	echo -e "\033[0;35m
 
