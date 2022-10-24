@@ -2,7 +2,7 @@
 This automation tool will help you quickly get through all the ALX assignments. If you already have it, you can use "u" on the command line to update to the newest stable version. The stable channel is updated weekly.<br /><br />
 
 **_Proudly sponsored by:_** ALX Lazy People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
-_***Very important** Remember to change your the default directory to your preferred directory after every **install**, **reinstall** or **update**._<br /><br />
+_***Very important** Remember to change your the default directory to your preferred directory after every **install**._<br /><br />
 
 # Installation
 
@@ -35,6 +35,8 @@ Navigates into the tool's folder from the root repo folder. Quick for making cod
 Displays the version information for the currently running tool version. See also "v".<br /><br />
 **e -u**<br />
 Upgrades the tool the most recent stable version available. You should use this at least once a week. See also "u".<br /><br />
+**e -d**<br />
+Navigates to the tool directory from the repo directory.<br /><br />
 **d**<br />
 Uninstall the automation tool. Careful with this one, no further warning is given.<br /><br />
 **u**<br />
