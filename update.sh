@@ -6,7 +6,6 @@ else
 	echo -e "Updating...\n"
 	cd ./.alx-automation
 	git pull -q
-	cd ..
-	./.alx-automation/alias.sh
+	./alias.sh
 	echo -e "All done\n"
 fi
