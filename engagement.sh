@@ -1,6 +1,9 @@
 if [[ $1 == '-d' ]]
 then
 	cd .alx-automation
+elif [[ $1 == '-w' ]]
+then
+	cd $DIR_PATH
 elif [[ $1 == '-v' ]]
 then
 	v
