@@ -2,7 +2,7 @@
 This automation tool will help you quickly get through all the ALX assignments. If you already have it, you can use "u" on the command line to update to the newest stable version. The stable channel is updated weekly.<br /><br />
 
 **_Proudly sponsored by:_** ALX Lazy People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
-_*Always remember to change your the default directory to your preferred directory after every **install**, **reinstall** or **update**._<br /><br />
+_***Very important** Remember to change your the default directory to your preferred directory after every **install**, **reinstall** or **update**._<br /><br />
 
 # Installation
 
@@ -13,37 +13,37 @@ Run _(copy, paste and hit enter)_ the following command to setup in your **git r
 # Usage
 The following command line aliases have the following effects within your **repo root folder**:
 
-**r**<br />
-Generate an empty file (without template code) or modify one that already exists.<br /><br />
-**r c**<br />
-Generate or modify a c source file.<br /><br />
-**r h**<br />
-Generate or modify a c header file.<br /><br />
-**r bash**<br />
-Generate or modify a bash script file.<br /><br />
-**e**<br />
-Edit the script for the automation tool.
-- To change referenced working directory, change the `$DIR_PATH` variable on line #3. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
-
+**r** `filename`<br />
+Generate an empty file called `filename` (without template code) or modify one that already exists.<br /><br />
+**r c** `filename` `params...`<br />
+Generate or modify a c source file called `filename`. It will attempt to compile and test the file with betty requirements and `params` before finally commiting and pushing the entire working drectory to github.<br /><br />
+**r h** `filename` `params...`<br />
+Generate or modify a c header file called `filename`. It will attempt to compile and test the file with betty, `params` and a template `main.c` file then ask you to optionally push immedately.<br /><br />
+**r bash** `filename` `params...`<br />
+Generate or modify a bash script file called `filename`. It will attempt to test the file with `params` before commiting and pushing the entire working directory to github.<br /><br />
+**t c** `filename` `params...`<br />
+Testing only using `params` for the c source file called `filename`.<br /><br />
+**t h** `filename` `params...`<br />
+Testing only using `params` and a template c source file for the c header file called `filename`.<br /><br />
+**t bash** `filename` `params...`<br />
+Testing only using `params` for the .sh bash script called `filename`.<br /><br />
+**e** `directory`<br />
+Change referenced working directory. Changes the `$DIR_PATH` environment variable to `./directory`. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
+**e -d**<br />
+Navigates into the tool's folder from the root repo folder. Quick for making code adjustments to the tool.<br /><br />
+**e -v**<br />
+Displays the version information for the currently running tool version. See also "v".<br /><br />
+**e -u**<br />
+Upgrades the tool the most recent stable version available. You should use this at least once a week. See also "u".<br /><br />
 **d**<br />
-Uninstall the automation tool.<br /><br />
+Uninstall the automation tool. Careful with this one, no further warning is given.<br /><br />
 **u**<br />
-Update the script to the newest version.<br /><br />
+Update the tool to the newest stable version.<br /><br />
 
 ## Warning
 
 ### Edit before use:
-By default the script will add new files to the `./default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type 'e' and hit enter then follow these steps.
-
-#### STEP 1: 
-Type 'i' to edit the file
-#### STEP 2:
-Change the `DIR_PATH=./default_directory` variable on line #3 to `DIR_PATH=./desired_directory` (Hint: its given as Directory: 0x0... in the question)
-#### STEP 3:
-Hit the 'esp' key to leave edit mode
-#### STEP 4:
-Type ':wq' to write changes and close the file
-
+By default the script will add new files to the `./default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type `e new_working_directory`. This should be changed again for every new project and git repo folder. Trial and error might make this clearer, so have at it.
 
 # Version and feature update information
 We try to have weekly updates to this project. You can use "u" alias to update easily from your terminal.
@@ -58,6 +58,15 @@ We try to have weekly updates to this project. You can use "u" alias to update e
 - Retrieve commit messages from README file automatically 
 - Checks for betty style and documentation compliance in all created or modified file before testing
 - (Coming soon) Adding testing parameters for bash and C source files from the command line
+
+
+## v4.0.0
+- New direct testing feature with "t" command
+- Faster change of working directory workflow with "e directory" command
+- Faster run sequence with up arrow key to recall last command which will now contain filename
+- New man page feature with "man alx-auto"
+- Architecture redesign
+
 
 ## v3.1.0
 - Update to uninstall and update scripts

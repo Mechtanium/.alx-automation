@@ -3,16 +3,22 @@
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
-./.alx-automation/readme.sh
+source ./.alx-automation/readme.sh
 
 #Create project file
 create_new () {
         cat $2 > $1
 }
 
-echo -ne "\033[0;35mWhat is filename: \033[0m"
-read filename
-FILE_PATH=$DIR_PATH/$filename
+if [ -z $2 ]
+then
+	FILE_PATH=$2
+else
+	echo -ne "\033[0;35mWhat is filename: \033[0m"
+	read filename
+	FILE_PATH=$DIR_PATH/$filename
+fi
+
 if ! [ -f "$FILE_PATH" ]
 then
     if [ $1 == bash ] || [ $1 == Bash ] || [ $1 == BASH ]
@@ -61,10 +67,7 @@ version () {
 if ! [ $1 == h ] && ! [ $1 == H ]
 then
         echo -e "\033[0;35mVerify result and hit enter key to continue or ctrl+C to terminate: \033[0m"
-        read
-	rm -f $DIR_PATH/main
-	rm -fi ./.alx-automation/main.c
-
+        read #pause execution flow
 	version
 else
 	echo -e "\033[0;35mDo you want to push this header file to github now? (y/n)\033[0m"

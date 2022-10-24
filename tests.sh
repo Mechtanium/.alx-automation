@@ -22,7 +22,7 @@ then
 		echo -e "\033[0;35m\nResults...\n\033[0m"
 		$DIR_PATH/main $3 $4 $5 $6 $7 $8 $9
 		echo -e "\n"
-		rm -fi $MAIN_C
+		rm -fi $MAIN_C $DIR_PATH/main
 	else
 		betty-style $FILE_PATH
 		betty-doc $FILE_PATH
@@ -31,6 +31,7 @@ then
 		echo -e "\033[0;35m\nResults...\n\033[0m"
 		$DIR_PATH/main $3 $4 $5 $6 $7 $8 $9
 		echo -e "\n"
+		rm -f $DIR_PATH/main
 	fi
 elif [[ $1 == h ]] || [[ $1 == H ]]
 then

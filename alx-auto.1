@@ -1,0 +1,77 @@
+.TH alx-automation 1 2022-10-23
+.SH NAME
+alx-automation \- ALX automation tool
+
+.SH SYNOPSIS
+.B r
+[\fBbash\fR \fIfilename\fR \fIparam...\fR]
+[\fBc\fR \fIfilename\fR \fIparam...\fR]
+[\fBh\fR \fIfilename\fR  \fIparam...\fR]
+.SH _
+.B e
+[\fB-d\fR ]
+[\fB-v\fR]
+[\fB-u\fR]
+[\fIdirectory\fR]
+.SH _
+.B t
+[\fBbash\fR \fIfilename\fR \fIparam...\fR]
+[\fBc\fR \fIfilename\fR \fIparam...\fR]
+[\fBh\fR \fIfilename\fR \fIparam...\fR]
+.SH _
+.B u
+.SH _
+.B v
+.SH _
+.B d
+.SS OPTIONS
+.TP
+\fBbash\fR \fIfilename\fR \fIparam...\fR
+Create a file named \fIfilename\fR in the working directory and/or treat it as a bash script during initialization and testing with \fIparam...\fR.
+.TP
+\fBc\fR \fIfilename\fR \fIparam...\fR
+Create a file named \fIfilename\fR in the working directory and/or treat it as a c source file during initialization and testing \fIparam...\fR.
+.TP
+\fBh\fR \fIfilename\fR \fIparam...\fR
+Create a file named \fIfilename\fR in the working directory and/or treat it as a c header file during initialization and testing \fIparam...\fR.
+.TP
+\fB-d\fR
+Causes the engagement command to navigate to the tool directory. Useful when you want to make code changes to support usual workflows.
+.TP
+\fB-v\fR
+Causes the engagement command to display the version information of the currently install tool version. Same as the "v" command.
+.TP
+\fB-u\fR
+Causes the engagement command to upgrade the tool to the most recent stable version. Same as the "u" command.
+.TP
+\fIdirectory\fR
+Causes the engagement command to change the currect working directory to "./\fIdirectory\fR". All future file creation and testing will be done from this directory. Even in other git repo folders, keep this in mind.
+.SH DESCRIPTION
+.TP
+.B r
+run command initiates the project answering workflow includng file creation, testing, commiting and pushing to github.
+.SH
+.TP
+.B e
+engagement command allows users engage with the tool and modify it functionality. Useful for adjusting the tool in cases of unusual workflow/project requirements.
+.SH
+.TP
+.B t
+test command intiates testing workflow only (see r command).
+.SH
+.TP
+.B u
+upgrade command upgrades the tool the most recent stable version. You should use this command at least once a week for best experience.
+.SH
+.TP
+.B v
+version command displays the version information of the current tool version.
+.SH
+.TP
+.B d
+destroy command completely removes the tool and all its artifacts from your machine. Use with care, no further warnings are given.
+.SH FILES
+.TP
+\fC/*repo_folder/.alx-automation/*\fR
+.SH AUTHOR
+@Ame Mathias (on ALX slack), enosmath@gmail.com
