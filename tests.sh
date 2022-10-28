@@ -22,8 +22,8 @@ then
 		echo -e "\033[0;35m\nResults...\n\033[0m"
 		$DIR_PATH/main $3 $4 $5 $6 $7 $8 $9
 		echo -e "\n"
-		rm -fi $MAIN_C 
 		rm -f $DIR_PATH/main
+		rm -fi $MAIN_C
 	else
 		betty-style $FILE_PATH
 		betty-doc $FILE_PATH
