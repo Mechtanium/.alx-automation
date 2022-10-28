@@ -36,28 +36,7 @@ then
 	fi
 elif [[ $1 == h ]] || [[ $1 == H ]]
 then
-	! [[ -f "$MAIN_C" ]] && echo -e "/*tested at $MAIN_C*/
-#include <stdio.h>
-#include <stdlib.h>
-#include \"$2\"
-/**
- * main - print test
- *
- * Description: Tests by printing Okay code.
- * Return: 0.
-*/
-int main(void)
-{
-	printf(\"Okay code\\\n\"); /*Test code*/
-	/*Add any other test cases you want here*/
-	return (0);
-}" > $MAIN_C
-	vi $MAIN_C
-	betty-style $MAIN_C
-	betty-doc $MAIN_C
-	gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $MAIN_C -I $DIR_PATH -o $DIR_PATH/main
-	chmod u+x $DIR_PATH/main
-	echo -e "\033[0;35m\nResults...\n\n\033[0m$($DIR_PATH/main)\n"
-	rm -fi $MAIN_C
+	betty-style $FILE_PATH
+	betty-doc $FILE_PATH
 fi
 
