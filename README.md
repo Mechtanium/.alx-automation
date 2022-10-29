@@ -45,7 +45,7 @@ Update the tool to the newest stable version.<br /><br />
 ## Warning
 
 ### Edit before use:
-By default the script will add new files to the `./default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type `e new_working_directory`. This should be changed again for every new project and git repo folder. Trial and error might make this clearer, so have at it.
+By default the script will add new files to the `./default_directory`. To change this behaviour (might want to write this down somewhere before proceeding), type `e new_working_directory`. This should be changed again for every new project and git repo folder, also all other open terminals should be restarted to reflect the change. Trial and error might make this clearer, so have at it.
 
 # Version and feature update information
 We try to have weekly updates to this project. You can use "u" alias to update easily from your terminal.
