@@ -61,7 +61,7 @@ We try to have weekly updates to this project. You can use "u" alias to update e
 - Commits files to repo automatically
 - Retrieve commit messages from README file automatically 
 - Checks for betty style and documentation compliance in all created or modified file before testing
-- (Coming soon) Adding testing parameters for bash and C source files from the command line
+- Add testing parameters for bash and C source files from the command line
 
 
 ## v4.0.0
