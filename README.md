@@ -35,8 +35,6 @@ Navigates into the tool's folder from the root repo folder. Handy for making cod
 Displays the version information for the currently running tool version. See also "v".<br /><br />
 **e -u**<br />
 Upgrades the tool the most recent stable version available. You should use this at least once a week. See also "u".<br /><br />
-**e _directory_**<br />
-Updates the tool's working directory `./directory`. All future file creation and testing will be done from this directory. Even in other  git  repo  folders, keep this in mind..<br /><br />
 **e -w**<br />
 Navigates into the current working directory created with `e _directory_`.<br /><br />
 **d**<br />
