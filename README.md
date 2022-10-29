@@ -30,13 +30,15 @@ Testing only using `params` for the .sh bash script called `filename`.<br /><br 
 **e** `directory`<br />
 Change referenced working directory. Changes the `$DIR_PATH` environment variable to `./directory`. see [Edit before use](https://github.com/Mechtanium/.alx-automation/edit/main/README.md#edit-before-use) section for more details.
 **e -d**<br />
-Navigates into the tool's folder from the root repo folder. Quick for making code adjustments to the tool.<br /><br />
+Navigates into the tool's folder from the root repo folder. Handy for making code adjustments to accomodate unusual workflows.<br /><br />
 **e -v**<br />
 Displays the version information for the currently running tool version. See also "v".<br /><br />
 **e -u**<br />
 Upgrades the tool the most recent stable version available. You should use this at least once a week. See also "u".<br /><br />
-**e -d**<br />
-Navigates to the tool directory from the repo directory.<br /><br />
+**e _directory_**<br />
+Updates the tool's working directory `./directory`. All future file creation and testing will be done from this directory. Even in other  git  repo  folders, keep this in mind..<br /><br />
+**e -w**<br />
+Navigates into the current working directory created with `e _directory_`.<br /><br />
 **d**<br />
 Uninstall the automation tool. Careful with this one, no further warning is given.<br /><br />
 **u**<br />

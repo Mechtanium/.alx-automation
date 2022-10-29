@@ -36,16 +36,19 @@ Create a file named \fIfilename\fR in the working directory and/or treat it as a
 Create a file named \fIfilename\fR in the working directory and/or treat it as a c header file during initialization and testing \fIparam...\fR.
 .TP
 \fB-d\fR
-Causes the engagement command to navigate to the tool directory. Useful when you want to make code changes to support usual workflows.
+Navigates to the tool directory. Useful when you want to make code changes to support out-of-the-ordinary workflows.
 .TP
 \fB-v\fR
-Causes the engagement command to display the version information of the currently install tool version. Same as the "v" command.
+Displays the version information of the currently install version. Same as the "v" command.
 .TP
 \fB-u\fR
-Causes the engagement command to upgrade the tool to the most recent stable version. Same as the "u" command.
+Upgrades the tool to the most recent stable version. Same as the "u" command.
+.TP
+\fB-w\fR
+Navigates into the current working directory.
 .TP
 \fIdirectory\fR
-Causes the engagement command to change the currect working directory to "./\fIdirectory\fR". All future file creation and testing will be done from this directory. Even in other git repo folders, keep this in mind.
+Changes the currect working directory to "./\fIdirectory\fR". All future file creation and testing will be done from this directory. Even in other git repo folders, keep this in mind.
 .SH DESCRIPTION
 .TP
 .B r
