@@ -2,17 +2,19 @@
 This automation tool will help you quickly get through all the ALX assignments. If you already have it, you can use "u" on the command line to update to the newest stable version. The stable channel is updated weekly.<br /><br />
 
 **_Proudly sponsored by:_** ALX Lazy People Foundation - **Our motto:** Computing removes repitition and speeds innovation.<br /><br />
-_***Very important** Remember to change the default working directory to your preferred directory after every **install**._<br /><br />
+_***Very important** Remember to change the default working directory to your preferred directory after **installation**._<br /><br />
+
+## Tutorial videos
+[1 - Intro](https://alx-students.slack.com/files/U03TL91991Q/F048GPTEF38/intro.mp4)<br />
+[2 - Changing your working directory](https://alx-students.slack.com/files/U03TL91991Q/F048LDLGD0D/changing_working_directory.mp4)<br />
+[3 - Creating and testing header files](https://alx-students.slack.com/files/U03TL91991Q/F048LDTT0G5/creating_and_testing_header_files.mp4)<br />
+[4 - Creating and testing C source files](https://alx-students.slack.com/files/U03TL91991Q/F048RS4G3JQ/creating_and_testng_c_files.mp4)<br />
+[5 - Outro](https://alx-students.slack.com/files/U03TL91991Q/F049D3X67J4/outro.mp4)<br /><br />
 
 # Installation
 
 Run _(copy, paste and hit enter)_ the following command to setup in your **git repository root folder _(e.g ~/alx-low_level_programming)_**.<br /><br />
 **wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh**<br /><br />
-[1 - Intro](https://alx-students.slack.com/files/U03TL91991Q/F048GPTEF38/intro.mp4)<br />
-[2 - Changing your working directory](https://alx-students.slack.com/files/U03TL91991Q/F048LDLGD0D/changing_working_directory.mp4)<br />
-[3 - Creating and testing header files](https://alx-students.slack.com/files/U03TL91991Q/F048LDTT0G5/creating_and_testing_header_files.mp4)<br />
-[4 - Creating and testing C source files](https://alx-students.slack.com/files/U03TL91991Q/F048RS4G3JQ/creating_and_testng_c_files.mp4)<br />
-[5 - Outro](https://alx-students.slack.com/files/U03TL91991Q/F049D3X67J4/outro.mp4)<br />
 
 # Usage
 The following command line aliases have the following effects within your **repo root folder**:
