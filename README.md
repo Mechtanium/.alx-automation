@@ -8,7 +8,11 @@ _***Very important** Remember to change the default working directory to your pr
 
 Run _(copy, paste and hit enter)_ the following command to setup in your **git repository root folder _(e.g ~/alx-low_level_programming)_**.<br /><br />
 **wget -q -O setup.sh https://l.sapiens.ng/setup && chmod u+x setup.sh && ./setup.sh**<br /><br />
-[Intro and setup video](https://alx-students.slack.com/files/U03TL91991Q/F045F0A29NG/alx_lazy_people_foundation_-_alpf_________.mp4)
+[1 - Intro](https://alx-students.slack.com/files/U03TL91991Q/F048GPTEF38/intro.mp4)<br />
+[2 - Changing your working directory](https://alx-students.slack.com/files/U03TL91991Q/F048LDLGD0D/changing_working_directory.mp4)<br />
+[3 - Creating and testing header files](https://alx-students.slack.com/files/U03TL91991Q/F048LDTT0G5/creating_and_testing_header_files.mp4)<br />
+[4 - Creating and testing C source files](https://alx-students.slack.com/files/U03TL91991Q/F048RS4G3JQ/creating_and_testng_c_files.mp4)<br />
+[5 - Outro](https://alx-students.slack.com/files/U03TL91991Q/F049D3X67J4/outro.mp4)<br />
 
 # Usage
 The following command line aliases have the following effects within your **repo root folder**:
@@ -60,6 +64,10 @@ We try to have weekly updates to this project. You can use "u" alias to update e
 - Retrieve commit messages from README file automatically 
 - Checks for betty style and documentation compliance in all created or modified file before testing
 - Add testing parameters for bash and C source files from the command line
+
+
+## v4.0.1
+- Documentation updates
 
 
 ## v4.0.0
