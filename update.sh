@@ -9,6 +9,7 @@ else
 	./alias.sh
 	cd ..
 	v
+	source ~/.bashrc
 	echo -e "
 \033[0;32m
     *   * *****    *    *   *
