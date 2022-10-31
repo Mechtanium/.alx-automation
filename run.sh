@@ -45,7 +45,7 @@ echo -e "
 Current folder $DIR_PATH content\n\033[0;35mEnsure your file is listed\n\033[0m"
 
 #Testing
-t $1 $filename
+t $1 $filename $3 $4 $5 $6 $7 $8 $9
 
 version () {
 	#Versioning and submission
