@@ -6,8 +6,10 @@ else
 	echo -e "\033[0;33mUpdating...\033[0m\n"
 	cd ./.alx-automation
 	git pull -q
-	./alias.sh
+	source ./alias.sh
+	cd ..
 	v
+	source ~/.bashrc
 	echo -e "
 \033[0;32m
     *   * *****    *    *   *
