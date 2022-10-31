@@ -7,6 +7,7 @@ else
 	cd ./.alx-automation
 	git pull -q
 	./alias.sh
+	cd ..
 	v
 	echo -e "
 \033[0;32m
