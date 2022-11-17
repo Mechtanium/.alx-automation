@@ -13,8 +13,8 @@ then
 	if [[ $ans == y ]] || [[ $ans == Y ]]
 	then
 		vi $MAIN_C
-		betty-style $MAIN_C $FILE_PATH
-		betty-doc $MAIN_C $FILE_PATH
+		betty-style $(ls $DIR_PATH)
+		betty-doc $(ls $DIR_PATH)
 		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 \
 			$PUT_C $DIR_PATH/*.c $MAIN_C \
 			-I $DIR_PATH -o $DIR_PATH/main
@@ -25,8 +25,8 @@ then
 		rm -f $DIR_PATH/main
 		rm -fi $MAIN_C
 	else
-		betty-style $FILE_PATH
-		betty-doc $FILE_PATH
+		betty-style $(ls $DIR_PATH)
+		betty-doc $(ls $DIR_PATH)
 		gcc -Wall -pedantic -Werror -Wextra -std=gnu89 $PUT_C $DIR_PATH/*.c -o $DIR_PATH/main
 		chmod u+x $DIR_PATH/main
 		echo -e "\033[0;35m\nResults...\n\033[0m"

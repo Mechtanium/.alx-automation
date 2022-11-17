@@ -11,24 +11,30 @@ create_new () {
 }
 
 case $2 in
-	"")
+"")
+	case $1 in
+	bash | Bash | BASH | c | C | h | H)
+		;;
+	*)
 		echo -ne "\033[0;35mWhat is filename: \033[0m"
 		read filename
 		FILE_PATH=$DIR_PATH/$filename;;
-	*)
-		filename=$2
-		FILE_PATH=$DIR_PATH/$2;;
+	esac
+	;;
+*)
+	filename=$2
+	FILE_PATH=$DIR_PATH/$2;;
 esac
 
 if ! [ -f "$FILE_PATH" ]
 then
 	case $1 in
-		bash | Bash | BASH)
-			create_new "$FILE_PATH" ./.alx-automation/temp.bash;;
-		c | C)
-			create_new "$FILE_PATH" ./.alx-automation/temp.c;;
-		h | H)
-			create_new "$FILE_PATH" ./.alx-automation/temp.h;;
+	bash | Bash | BASH)
+		create_new "$FILE_PATH" ./.alx-automation/temp.bash;;
+	c | C)
+		create_new "$FILE_PATH" ./.alx-automation/temp.c;;
+	h | H)
+		create_new "$FILE_PATH" ./.alx-automation/temp.h;;
 	esac
 fi
 
