@@ -97,4 +97,4 @@ We try to have weekly updates to this project. You can use "u" alias to update e
 - How to copy and paste on Ubunto 20.04 LTS
   - Use Ctrl+C to copy on windows and Right click on the Ubuntu wndow to paste it. (For debian linux _(e.g. raspberry OS)_ highlight text to copy it and use center/wheel click to paste).
 - I'm having trouble updating the script with "u". 
-  - As a brute force method, use _**rm -r .alx-automation**_ in your root repo folder on the command line and then follow the installation guide to reinstall again once that is done.
+  - As a brute force method, use _**rm -r .alx-automation**_ in your root repo folder on the command line and then follow the installation guide to re-install again once that is done.
