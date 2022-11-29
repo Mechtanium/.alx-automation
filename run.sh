@@ -3,7 +3,7 @@
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
-source ./.alx-automation/README.md
+source ./.alx-automation/readme.sh
 
 #Create project file
 create_new () {
